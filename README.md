@@ -1,76 +1,119 @@
-# Welcome to your Lovable project
 
-## Project info
+# Port Watcher - Vessel Tracking System
 
-**URL**: https://lovable.dev/projects/343db1a1-03dd-4461-951d-c501b0231a2a
+A maritime vessel tracking system for port authorities that provides real-time vessel positions, status updates, and reporting capabilities.
 
-## Project IMG
-![Image](https://github.com/user-attachments/assets/7506717b-a452-49db-aaa9-4ccb9f3232df)
+![Project Preview](https://github.com/user-attachments/assets/7506717b-a452-49db-aaa9-4ccb9f3232df)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Interactive vessel map with real-time positions
+- Vessel tracking with arrival/departure status
+- Detailed vessel information and statistics
+- Responsive design for desktop and mobile devices
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/343db1a1-03dd-4461-951d-c501b0231a2a) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- [Node.js](https://nodejs.org/) (v14 or newer)
+- npm or yarn package manager
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone https://github.com/yourusername/port-watcher.git
+cd port-watcher
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```sh
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```sh
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment Options
 
-## What technologies are used for this project?
+### Option 1: Deploy with Lovable
 
-This project is built with:
+1. Visit [Lovable](https://lovable.dev/projects/343db1a1-03dd-4461-951d-c501b0231a2a)
+2. Click on Share -> Publish
+3. Follow the prompts to deploy your application
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Option 2: Manual Deployment
 
-## How can I deploy this project?
+1. Build the project
+```sh
+npm run build
+# or
+yarn build
+```
 
-Simply open [Lovable](https://lovable.dev/projects/343db1a1-03dd-4461-951d-c501b0231a2a) and click on Share -> Publish.
+2. The build output will be in the `dist` folder, which you can deploy to any static hosting service like:
+   - [Netlify](https://www.netlify.com/)
+   - [Vercel](https://vercel.com/)
+   - [GitHub Pages](https://pages.github.com/)
+   - [AWS S3](https://aws.amazon.com/s3/)
 
-## Can I connect a custom domain to my Lovable project?
+### Connecting a Custom Domain
 
-Yes, you can!
+To connect a custom domain to your deployed site:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Navigate to Project > Settings > Domains in Lovable
+2. Click "Connect Domain"
+3. Follow the instructions to set up DNS records for your domain
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Development
+
+### Project Structure
+
+```
+port-watcher/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # React components
+│   ├── data/           # Sample vessel data
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions and types
+│   ├── pages/          # Page components
+│   ├── App.tsx         # Main application
+│   └── main.tsx        # Entry point
+├── index.html          # HTML template
+├── tailwind.config.ts  # Tailwind CSS configuration
+└── vite.config.ts      # Vite configuration
+```
+
+### Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Create a production build
+- `npm run preview` - Preview the production build locally
+
+## Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [React](https://reactjs.org/), [Vite](https://vitejs.dev/), and [Tailwind CSS](https://tailwindcss.com/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Map visualization using [Mapbox](https://www.mapbox.com/)
