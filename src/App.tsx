@@ -6,6 +6,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Vessels from "./pages/Vessels";
+import Tracking from "./pages/Tracking";
+import Reports from "./pages/Reports";
 
 const queryClient = new QueryClient();
 
@@ -17,10 +20,9 @@ const App = () => (
         <Sonner />
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* These routes are currently placeholders for future implementation */}
-          <Route path="/vessels" element={<Index />} />
-          <Route path="/tracking" element={<Index />} />
-          <Route path="/reports" element={<Index />} />
+          <Route path="/vessels" element={<Vessels />} />
+          <Route path="/tracking" element={<Tracking />} />
+          <Route path="/reports" element={<Reports />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
